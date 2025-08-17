@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EduNest — Online Course Education</title>
+
+    <!-- Primary SEO -->
+    <meta name="description" content="EduNest is an online learning platform offering high‑quality courses, expert instructors, certificates, and career‑ready projects." />
+    <meta name="keywords" content="online courses, e-learning, education platform, certificates, instructors, programming, design, marketing" />
+    <meta name="author" content="EduNest" />
+    <link rel="canonical" href="https://example.com/" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+
+    <!-- PWA / Theming (optional) -->
+    <meta name="theme-color" content="#0ea5e9" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:title" content="EduNest — Online Course Education" />
+    <meta property="og:description" content="Learn in-demand skills with expert-led online courses and earn shareable certificates." />
+    <meta property="og:image" content="https://example.com/assets/og-image.png" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="EduNest — Online Course Education" />
+    <meta name="twitter:description" content="Build skills with hands-on courses, projects, and certificates." />
+    <meta name="twitter:image" content="https://example.com/assets/og-image.png" />
+<!-- ✅ SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+ <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        
+<div class="container-home  flex flex-row">
+
+  <!-- right sub container -->
+  <div class="base-container flex-1 ">
+  
+    <!-- up nav -->
+    <div style="position: sticky; left: 0; top: 0; z-index: 5;"  class="main-nav-bar flex  justify-around items-center px-5 py-4 pr-7 bg-white">
+        <h2 class="font-semibold text-xl">Educa</h2>
+
+        <div class="form">
+            <input class="bg-gray-200 hidden md:inline py-2 px-3 rounded-md w-36 md:w-80  xl:w-96" type="search" placeholder="search courses...." name="searchCourses">
+            <i class="relative right-8 hidden md:inline fa-solid fa-magnifying-glass"></i>
+            
+        </div>
+
+        <div class="icon-controls flex space-x-3">
+            <i class="bg-gray-200 p-3 text-md rounded-md text-center fa-solid fa-bars"></i>
+            <i class="bg-gray-200 p-3 text-md rounded-md text-center fa-solid fa-user"></i>
+            <i class="bg-gray-200 p-3 text-md rounded-md text-center md:hidden fa-solid fa-magnifying-glass"></i>
+            <i class="bg-gray-200 p-3 text-md rounded-md text-center fa-solid fa-gear"></i>
+        </div>
+    </div>
+
+    <div class="main-container bg-gray-200  p-3 px-32">
+
+    
+<div class="container max-w-lg mx-auto bg-white rounded-lg shadow-md p-8 mt-10">
+  <!-- Title -->
+  <h2 class="text-2xl font-bold text-blue-950 text-center mb-6">Register Now</h2>
+
+  <!-- Register Form -->
+  <form class="form flex flex-col gap-5">
+    
+    <!-- Name -->
+    <div class="flex flex-col gap-2">
+      <label for="name" class="font-medium text-gray-700">Your Name <span class="text-red-500">*</span></label>
+      <input required id="name" type="text" placeholder="Enter your name"
+             class="w-full border border-gray-300 rounded-md p-3 focus:outline-none 
+                    focus:ring-2 bg-gray-200 focus:ring-purple-500 placeholder-gray-400">
+    </div>
+
+    <!-- Email -->
+    <div class="flex flex-col gap-2">
+      <label for="email" class="font-medium text-gray-700">Your Email <span class="text-red-500">*</span></label>
+      <input required id="email" type="email" placeholder="Enter your email"
+             class="w-full border border-gray-300 rounded-md p-3 focus:outline-none 
+                    focus:ring-2 bg-gray-200 focus:ring-purple-500 placeholder-gray-400">
+    </div>
+
+    <!-- Password -->
+    <div class="flex flex-col gap-2">
+      <label for="pass" class="font-medium text-gray-700">Your Password <span class="text-red-500">*</span></label>
+      <input required id="pass" type="password" placeholder="Enter your password"
+             class="w-full border border-gray-300 rounded-md p-3 focus:outline-none 
+                    focus:ring-2 bg-gray-200 focus:ring-purple-500 placeholder-gray-400">
+    </div>
+
+    <!-- Confirm Password -->
+    <div class="flex flex-col gap-2">
+      <label for="cpass" class="font-medium text-gray-700">Confirm Password <span class="text-red-500">*</span></label>
+      <input required id="cpass" type="password" placeholder="Confirm your password"
+             class="w-full border border-gray-300 rounded-md p-3 focus:outline-none 
+                    focus:ring-2 bg-gray-200 focus:ring-purple-500 placeholder-gray-400">
+    </div>
+
+
+ 
+        <!-- Upload Photo -->
+     
+    <div  >
+
+      <p class="block text-gray-700 font-semibold mb-5">please select your icon</p>
+      <div class="Upload-Photo flex flex-wrap gap-5 px-10">
+
+      </div>
+    </div>
+    <!-- Button -->
+    <button id="btn" type="submit"
+            class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded-md transition duration-300">
+      Register New
+    </button>
+  </form>
+</div>
+
+
+    </div>
+
+    <div style="position: sticky ; bottom:0; " class="footer  border w-full flex justify-center bg-white md:text-xl p-7 ">
+       <p>copyright @2025 by <span class="text-purple-500">Eng: kiroloes Reda </span> | all rights reserved!</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+<script src="./main.js"></script>
+<script>
+
+const uploadPhoto=document.querySelector(".Upload-Photo");
+  
+  iconsArray.forEach(element => {
+     uploadPhoto.innerHTML+=`
+              <div class="px-2 py-1 flex flex-col justify-center items-center">
+             <img   id="profile" class="w-14 h-14 rounded-full shadow" src=${element} alt="Mona Deo (Teacher)">
+             <p onclick="getIcon('${element}')" class="cursor-pointer p-1 px-10 rounded-md text-white bg-slate-800 border-none shadow-sm">select</p>
+
+             </div>
+             `
+  });
+// variable
+const name=document.getElementById("name");
+const email=document.getElementById("email");
+const pass=document.getElementById("pass");
+const cpass=document.getElementById("cpass");
+const profile=document.getElementById("profile");
+const btnRegistration=document.getElementById("btn")
+
+
+console.log(student)
+
+
+let profilevalue="";
+
+function getIcon(value){
+  
+  console.log(value)
+   profilevalue=value;
+}
+btnRegistration.addEventListener("click" ,(e)=>{
+  e.preventDefault();
+let nameValue=name.value.trim();
+let emailValue=email.value.trim();
+let passValue =pass.value.trim();
+let cpassValue=cpass.value.trim();
+
+
+
+    // ✅ Validation
+      if (!nameValue || !emailValue || !passValue || !cpassValue || !profilevalue) {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "All fields are required!"
+        });
+        return;
+      }
+if (passValue !== cpassValue) {
+        Swal.fire({
+          icon: "error",
+          title: "Password Error",
+          text: "Passwords do not match!"
+        });
+        return;
+      }
+
+      
+if((passValue.length<8)){
+      Swal.fire({
+        icon: "error",
+        title: "error!",
+        text: "please must be password length equal eight or more"
+      });
+      return;
+}
+
+student.name=nameValue;
+student.email=emailValue;
+student.password=passValue;
+student.icon=profilevalue;
+
+// Example usage
+let token = generateToken(32); // 32 bytes = 64 characters hex
+console.log("Generated Token:", token);
+localStorage.setItem("token",token)
+student.token=token
+
+let user =JSON.parse(localStorage.getItem("studentArray"))||[];
+user.push(student)
+localStorage.setItem("studentArray",JSON.stringify(user))
+console.log(user)
+
+
+
+Swal.fire({
+  icon: "success",
+  title: "Registered!",
+  text: "Registration Completed Successfully.",
+  showConfirmButton: true
+}).then((result) => {
+  if (result.isConfirmed) {
+    // ✅ redirect after pressing OK
+    window.location.href = "./index.html";
+  }
+});
+
+      // ✅ Clear form
+      name.value = "";
+      email.value = "";
+      pass.value = "";
+      cpass.value = "";
+      profile.value = "";
+      
+
+})
+
+
+
+
+
+
+
+</script>
+    </body>
+    </html>

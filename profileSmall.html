@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+ <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="bg-white rounded-lg shadow-md p-6 max-w-md mx-auto">
+  <!-- User Info -->
+  <div class="up-info mb-6 text-center">
+    <div class="flex flex-col items-center">
+      <img class="h-28 w-28 object-cover rounded-full shadow-md" src="./images/pic-3.jpg" alt="User image">
+      <h3 id="username" class="text-blue-950 font-bold text-lg mt-2">Kiroloes Reda</h3>
+      <p class="text-gray-500 font-medium text-sm">Student</p>
+    </div>
+    
+    <!-- View Profile Button -->
+    <div class="bg-purple-600 hover:bg-purple-700 w-full flex items-center justify-center 
+                text-white rounded-md px-3 py-2 mt-4 transition duration-300">
+      <a href="./profile.html" class="text-lg font-semibold">View Profile</a>
+    </div>
+  </div>
+
+  <!-- Login & Register Buttons -->
+  <div class="flex gap-4 justify-center">
+    <button class="login bg-orange-500 hover:bg-orange-600 text-white px-10 py-2 rounded-md font-semibold transition duration-300">
+      Login
+    </button>
+    <button class="register bg-orange-500 hover:bg-orange-600 text-white px-10 py-2 rounded-md font-semibold transition duration-300">
+      Register
+    </button>
+  </div>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EduNest — Online Course Education</title>
+
+    <!-- Primary SEO -->
+    <meta name="description" content="EduNest is an online learning platform offering high‑quality courses, expert instructors, certificates, and career‑ready projects." />
+    <meta name="keywords" content="online courses, e-learning, education platform, certificates, instructors, programming, design, marketing" />
+    <meta name="author" content="EduNest" />
+    <link rel="canonical" href="https://example.com/" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+
+    <!-- PWA / Theming (optional) -->
+    <meta name="theme-color" content="#0ea5e9" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:title" content="EduNest — Online Course Education" />
+    <meta property="og:description" content="Learn in-demand skills with expert-led online courses and earn shareable certificates." />
+    <meta property="og:image" content="https://example.com/assets/og-image.png" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="EduNest — Online Course Education" />
+    <meta name="twitter:description" content="Build skills with hands-on courses, projects, and certificates." />
+    <meta name="twitter:image" content="https://example.com/assets/og-image.png" />
+
+
+    <!-- ✅ SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+ <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        
+<div class="container-home  flex flex-row">
+
+  <!-- right sub container -->
+  <div class="base-container flex-1 ">
+  
+    <!-- up nav -->
+    <div style="position: sticky; left: 0; top: 0; z-index: 5;"  class="main-nav-bar flex  justify-around items-center px-5 py-4 pr-7 bg-white">
+        <h2  class="font-semibold text-xl">Educa</h2>
+
+        <div class="form">
+            <input class="bg-gray-200 hidden md:inline py-2 px-3 rounded-md w-36 md:w-80  xl:w-96" type="search" placeholder="search courses...." name="searchCourses">
+            <i class="relative right-8 hidden md:inline fa-solid fa-magnifying-glass"></i>
+            
+        </div>
+
+        <div class="icon-controls flex space-x-3">
+            <i class="bg-gray-200 p-3 text-md rounded-md text-center fa-solid fa-bars"></i>
+            <i class="bg-gray-200 p-3 text-md rounded-md text-center fa-solid fa-user"></i>
+            <i class="bg-gray-200 p-3 text-md rounded-md text-center md:hidden fa-solid fa-magnifying-glass"></i>
+            <i class="bg-gray-200 p-3 text-md rounded-md text-center fa-solid fa-gear"></i>
+        </div>
+    </div>
+
+    <div style="height: 83.5vh;" class="main-container bg-gray-200  p-3 px-32 flex  justify-center items-center">
+
+<div class="container max-w-md mx-auto bg-white rounded-lg shadow-md p-6 mt-10">
+  <!-- Title -->
+  <h2 class="text-2xl font-bold text-blue-950 text-center mb-6">Login Now</h2>
+
+  <!-- Login Form -->
+  <form class="form flex flex-col gap-5">
+    <!-- Email -->
+    <div class="flex flex-col gap-2">
+      <label for="email" class="font-medium text-gray-700">Your Email <span class="text-red-500">*</span></label>
+      <input id="email" type="email" placeholder="Enter your email"
+             class="w-full border bg-gray-100 border-gray-300 rounded-md p-3 focus:outline-none 
+                    focus:ring-2 focus:ring-purple-500 placeholder-gray-400">
+    </div>
+
+    <!-- Password -->
+    <div class="flex flex-col gap-2">
+      <label for="pass" class="font-medium text-gray-700">Your Password <span class="text-red-500">*</span></label>
+      <input id="pass" type="password" placeholder="Enter your password"
+             class="w-full border bg-gray-100 border-gray-300 rounded-md p-3 focus:outline-none 
+                    focus:ring-2 focus:ring-purple-500 placeholder-gray-400">
+    </div>
+
+    <!-- Button -->
+    <button id="btn" type="submit"
+            class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded-md transition duration-300">
+      Login
+    </button>
+  </form>
+</div>
+
+
+    </div>
+
+    <div style="position: sticky ; bottom:0; " class="footer  border w-full flex justify-center bg-white md:text-xl p-7 ">
+       <p>copyright @2025 by <span class="text-purple-500">Eng: kiroloes Reda </span> | all rights reserved!</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+<script src="./main.js"></script>
+<script>
+  const email = document.getElementById("email");
+  const pass = document.getElementById("pass");
+  const btn = document.getElementById("btn");
+
+  // ✅ Secure Token Generator
+  function generateToken(length = 32) {
+    const array = new Uint8Array(length);
+    window.crypto.getRandomValues(array);
+    return Array.from(array, (byte) => byte.toString(16).padStart(2, "0")).join("");
+  }
+
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let emailValue = email.value.trim();
+    let passValue = pass.value.trim();
+
+    let studentArray = JSON.parse(localStorage.getItem("studentArray")) || [];
+
+    // ✅ search for user
+    let user = studentArray.find(
+      (u) => u.email === emailValue && u.password === passValue
+    );
+
+    if (user) {
+      // generate token
+      let token = generateToken(32);
+      console.log("Generated Token:", token);
+
+      // save token to user
+      user.token = token;
+      localStorage.setItem("studentArray", JSON.stringify(studentArray));
+      localStorage.setItem("token", token);
+
+      // clear form
+      email.value = "";
+      pass.value = "";
+
+      Swal.fire({
+        icon: "success",
+        title: "Login Successful!",
+        text: "Welcome back!",
+        showConfirmButton: true,
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.location.href = "./index.html";
+        }
+      });
+    } else {
+Swal.fire({
+  icon: "error",
+  title: "User Not Found!",
+  text: "Please register first.",
+  showConfirmButton: true,
+  confirmButtonText: "Register",
+  showCancelButton: true,
+  cancelButtonText: "Cancel"
+}).then((res) => {
+  if (res.isConfirmed) {
+    window.location.href = "./registration.html";
+  } else if (res.isDismissed) {
+    // هنا بيرجع لو ضغط Cancel أو قفل الرسالة
+    return;
+  }
+});
+
+    }
+  });
+</script>
+
+    </body>
+    </html>

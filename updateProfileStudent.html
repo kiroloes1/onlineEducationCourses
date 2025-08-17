@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EduNest — Online Course Education</title>
+
+    <!-- Primary SEO -->
+    <meta name="description" content="EduNest is an online learning platform offering high‑quality courses, expert instructors, certificates, and career‑ready projects." />
+    <meta name="keywords" content="online courses, e-learning, education platform, certificates, instructors, programming, design, marketing" />
+    <meta name="author" content="EduNest" />
+    <link rel="canonical" href="https://example.com/" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+
+    <!-- PWA / Theming (optional) -->
+    <meta name="theme-color" content="#0ea5e9" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:title" content="EduNest — Online Course Education" />
+    <meta property="og:description" content="Learn in-demand skills with expert-led online courses and earn shareable certificates." />
+    <meta property="og:image" content="https://example.com/assets/og-image.png" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="EduNest — Online Course Education" />
+    <meta name="twitter:description" content="Build skills with hands-on courses, projects, and certificates." />
+    <meta name="twitter:image" content="https://example.com/assets/og-image.png" />
+<!-- ✅ SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+ <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        
+      <!-- sidebar -->
+<div id="sidebar"
+     class="fixed top-0 left-0 h-full w-full bg-white shadow-lg transform -translate-x-full lg:translate-x-0 transition-transform duration-500 ease-in-out z-50 hidden">
+
+  <!-- زرار قفل -->
+  <button id="closeMenu" class="lg:hidden absolute top-4 right-4 text-2xl font-bold text-gray-600">
+    ×
+  </button>
+
+  <!-- info for user -->
+  <div class="up-info mb-10 mt-10">
+    <div class="px-5 flex flex-col items-center">
+      <img class="h-28 w-28 object-cover rounded-full" src="./images/pic-3.jpg" alt="user image">
+      <h3 id="username" class="text-blue-950 font-bold text-base mt-1">kiroloes Reda</h3>
+      <p class="text-gray-500 font-semibold text-sm">student</p>
+    </div>
+    <div class="bg-purple-500  flex items-center justify-center text-white rounded-sm  py-2 mt-3 ">
+      <a href="./prfile.html" class="text-xl font-semibold">View Profile</a>
+    </div>
+  </div>
+
+  <!-- navigation bar -->
+  <div class="navigationBar px-3">
+    <ul class="space-y-6">
+      <li><a class="block py-2 px-3 hover:bg-purple-100 rounded" href="./index.html">Home</a></li>
+      <li><a class="block py-2 px-3 hover:bg-purple-100 rounded" href="./about.html">About</a></li>
+      <li><a class="block py-2 px-3 hover:bg-purple-100 rounded" href="./allcourses.html">Courses</a></li>
+      <li><a class="block py-2 px-3 hover:bg-purple-100 rounded" href="./teachers.html">Teachers</a></li>
+      <li><a class="block py-2 px-3 hover:bg-purple-100 rounded" href="./contactUs.html">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container-home  flex flex-row">
+  <!-- side nav bar -->
+  <div style="position: sticky; top: 0; z-index: 5; height: 100vh;" class="side-nav-bar px-3 py-10 border hidden lg:block   ">
+    <!-- info for user -->
+    <div class="up-info mb-10">
+      <div class="px-20 flex flex-col items-center">
+        <img class="h-28 w-28 object-cover rounded-full" src="./images/pic-3.jpg" alt="user image">
+        <h3 id="username" class="text-blue-950 font-bold text-base mt-1">kiroloes Reda</h3>
+        <p class="text-gray-500 font-semibold text-sm">student</p>
+      </div>
+      <div class="bg-purple-500 w-full flex items-center justify-center text-white rounded-sm px-3 py-2 mt-3">
+        <a  href="./prfile.html"  class="text-xl font-semibold">View Profile</a>
+      </div>
+    </div>
+
+    <!-- navigation bar  -->
+    <div class="navigationBar">
+      <ul class="space-y-10">
+        <li class=" hover:bg-gray-200  hover:text-white transition-colors flex flex-row items-center text-xl py-3 px-2">
+          <i class="fa-solid fa-house-user mr-2 text-purple-500"></i>
+          <a class="text-gray-500 px-2 rounded-sm" href="./index.html">home</a>
+        </li>
+        <li class="  hover:bg-gray-200  hover:text-white transition-colors flex flex-row items-center text-xl py-3 px-2">
+          <i class="fa-solid fa-address-card mr-2 text-purple-500"></i>
+          <a class="text-gray-500 px-2 rounded-sm" href="./about.html">about</a>
+        </li>
+        <li class=" hover:bg-gray-200  hover:text-white transition-colors flex flex-row items-center text-xl py-3 px-2">
+          <i class="fa-solid fa-graduation-cap mr-2 text-purple-500"></i>
+          <a class="text-gray-500 px-2 rounded-sm " href="./allcourses.html">courses</a>
+        </li>
+        <li class=" hover:bg-gray-200  hover:text-white transition-colors flex flex-row items-center text-xl py-3 px-2">
+          <i class="fa-solid fa-chalkboard-user mr-2 text-purple-500"></i>
+          <a class="text-gray-500 px-2 rounded-sm " href="./teachers.html">teachers</a>
+        </li>
+        <li class=" hover:bg-gray-200  hover:text-white transition-colors flex flex-row items-center text-xl py-3 px-2">
+          <i class="fa-solid fa-headset mr-2 text-purple-500"></i>
+          <a class="text-gray-500 px-2 rounded-sm" href="./contactUs.html">contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- right sub container -->
+  <div class="base-container flex-1 ">
+  
+    <!-- up nav -->
+    <div style="position: sticky; left: 0; top: 0; z-index: 5;"  class="main-nav-bar flex  justify-around items-center px-5 py-4 pr-7 bg-white">
+        <a href="./index.html"  class="font-semibold text-xl">Educa</a>
+
+        <div class="form">
+            <input class="bg-gray-200 hidden md:inline py-2 px-3 rounded-md w-36 md:w-80  xl:w-96" type="search" placeholder="search courses...." name="searchCourses">
+            <i class="relative right-8 hidden md:inline fa-solid fa-magnifying-glass"></i>
+            
+        </div>
+
+         <div class="icon-controls flex space-x-3">
+            <i class="bg-gray-200 p-3 text-md rounded-md text-center fa-solid fa-bars"></i>
+            <a href="./prfile.html"><i class="bg-gray-200 p-3 text-md rounded-md text-center fa-solid fa-user"></i></a>
+            <i class="bg-gray-200 p-3 text-md rounded-md text-center md:hidden fa-solid fa-magnifying-glass"></i>
+           <a href="./contactUs.html"> <i class="bg-gray-200 p-3 text-md rounded-md text-center fa-solid fa-gear"></i></a>
+        </div>
+    </div>
+
+<div  class="main-container flex justify-center items-center bg-white p-3 px-5 lg:px-32">
+  <form id="editForm" class="space-y-4  p-10 rounded-xl shadow-lg w-full max-w-lg">
+    
+    <!-- Name -->
+    <div>
+      <label class="block mb-1 font-medium">Name</label>
+      <input 
+        type="text" 
+        id="name" 
+        class="w-full border px-3 py-2 rounded-lg focus:ring-2 focus:ring-blue-300 bg-gray-100" 
+        placeholder="Enter your name">
+    </div>
+
+    <!-- Email -->
+    <div>
+      <label class="block mb-1 font-medium">Email</label>
+      <input 
+        type="email" 
+        id="email" 
+        class="w-full border px-3 py-2 rounded-lg focus:ring-2 focus:ring-blue-300 bg-gray-100" 
+        placeholder="Enter your email">
+    </div>
+
+    <!-- Password -->
+    <div>
+      <label class="block mb-1 font-medium">Password</label>
+      <input 
+        type="password" 
+        id="pass" 
+        class="w-full border px-3 py-2 rounded-lg focus:ring-2 focus:ring-blue-300 bg-gray-100" 
+        placeholder="Enter new password">
+    </div>
+
+
+        <!-- Upload Photo -->
+     
+    <div  >
+
+      <p class="block text-gray-700 font-semibold mb-5">please select your icon</p>
+      <div class="Upload-Photo flex flex-wrap gap-5 px-10">
+
+      </div>
+    </div>
+
+    <!-- Save Button -->
+    <button 
+      type="submit" id="btn"
+      class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-200">
+      Save Changes
+    </button>
+  </form>
+</div>
+
+
+    <div style="position: sticky ; bottom:0; " class="footer  border w-full flex justify-center bg-white md:text-xl p-7 ">
+       <p>copyright @2025 by <span class="text-purple-500">Eng: kiroloes Reda </span> | all rights reserved!</p>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="./main.js"></script>
+<script>
+
+  
+const uploadPhoto=document.querySelector(".Upload-Photo");
+  
+  uploadPhoto.innerHTML=""
+  iconsArray.forEach(element => {
+     uploadPhoto.innerHTML+=`
+              <div class="px-2 py-1 flex flex-col justify-center items-center">
+             <img   id="profile" class="w-14 h-14 rounded-full shadow" src=${element} alt="Mona Deo (Teacher)">
+             <p onclick="getIcon('${element}')" class="cursor-pointer p-1 px-10 rounded-md text-white bg-slate-800 border-none shadow-sm">select</p>
+
+             </div>
+             `
+  });
+    // variable
+const name=document.getElementById("name");
+const email=document.getElementById("email");
+const pass=document.getElementById("pass");
+const btn = document.getElementById("btn");
+const profile=document.getElementById("profile");
+
+let profilevalue="";
+
+function getIcon(value){
+  
+  console.log(value)
+   profilevalue=value;
+}
+btn.addEventListener("click",(e)=>{
+    e.preventDefault();
+    let nameValue=name.value.trim();
+    let emailValue=email.value.trim();
+    let passValue =pass.value.trim();
+      
+
+    // ✅ Validation
+      if (!nameValue || !emailValue || !passValue || !profilevalue) {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "All fields are required!"
+        });
+        return;
+      }
+
+      
+if((passValue.length<8)){
+      Swal.fire({
+        icon: "error",
+        title: "error!",
+        text: "please must be password length equal eight or more"
+      });
+      return;
+}
+
+studentArray.forEach((e,i,arr) => {
+    if(e.token===localStorage.getItem("token")){
+        arr[i].name=nameValue;
+        arr[i].email=emailValue;
+        arr[i].password=passValue;
+        arr[i].icon=profilevalue
+
+
+    }
+    localStorage.setItem("studentArray",JSON.stringify(studentArray))
+});
+
+
+
+
+Swal.fire({
+  icon: "success",
+  title: "Registered!",
+  text: "Registration Completed Successfully.",
+  showConfirmButton: true
+}).then((result) => {
+  if (result.isConfirmed) {
+    // ✅ redirect after pressing OK
+    window.location.href = "./index.html";
+  }
+});
+
+      // ✅ Clear form
+      name.value = "";
+      email.value = "";
+      pass.value = "";
+    
+     
+      
+
+})
+
+
+</script>
+    </body>
+    </html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EduNest — Online Course Education</title>
+
+    <!-- Primary SEO -->
+    <meta name="description" content="EduNest is an online learning platform offering high‑quality courses, expert instructors, certificates, and career‑ready projects." />
+    <meta name="keywords" content="online courses, e-learning, education platform, certificates, instructors, programming, design, marketing" />
+    <meta name="author" content="EduNest" />
+    <link rel="canonical" href="https://example.com/" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+
+    <!-- PWA / Theming (optional) -->
+    <meta name="theme-color" content="#0ea5e9" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:title" content="EduNest — Online Course Education" />
+    <meta property="og:description" content="Learn in-demand skills with expert-led online courses and earn shareable certificates." />
+    <meta property="og:image" content="https://example.com/assets/og-image.png" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="EduNest — Online Course Education" />
+    <meta name="twitter:description" content="Build skills with hands-on courses, projects, and certificates." />
+    <meta name="twitter:image" content="https://example.com/assets/og-image.png" />
+
+
+    <!-- link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+ <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+            <!-- sidebar -->
+<div id="sidebar"
+     class="fixed top-0 left-0 h-full w-full bg-white shadow-lg transform -translate-x-full lg:translate-x-0 transition-transform duration-500 ease-in-out z-50 hidden">
+
+  <!-- زرار قفل -->
+  <button id="closeMenu" class="lg:hidden absolute top-4 right-4 text-2xl font-bold text-gray-600">
+    ×
+  </button>
+
+  <!-- info for user -->
+  <div class="up-info mb-10 mt-10">
+    <div class="px-5 flex flex-col items-center">
+      <img class="h-28 w-28 object-cover rounded-full" src="./images/pic-3.jpg" alt="user image">
+      <h3 id="username" class="text-blue-950 font-bold text-base mt-1">kiroloes Reda</h3>
+      <p class="text-gray-500 font-semibold text-sm">student</p>
+    </div>
+    <div class="bg-purple-500  flex items-center justify-center text-white rounded-sm  py-2 mt-3 ">
+      <a href="./prfile.html" class="text-xl font-semibold">View Profile</a>
+    </div>
+  </div>
+
+  <!-- navigation bar -->
+  <div class="navigationBar px-3">
+    <ul class="space-y-6">
+      <li><a class="block py-2 px-3 hover:bg-purple-100 rounded" href="./index.html">Home</a></li>
+      <li><a class="block py-2 px-3 hover:bg-purple-100 rounded" href="./about.html">About</a></li>
+      <li><a class="block py-2 px-3 hover:bg-purple-100 rounded" href="./allcourses.html">Courses</a></li>
+      <li><a class="block py-2 px-3 hover:bg-purple-100 rounded" href="./teachers.html">Teachers</a></li>
+      <li><a class="block py-2 px-3 hover:bg-purple-100 rounded" href="./contactUs.html">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+
+        
+<div class="container-home  flex flex-row">
+  <!-- side nav bar -->
+  <div style="position: sticky; top: 0; z-index: 5; height: 100vh;" class="side-nav-bar px-3 py-10 border hidden lg:block  ">
+    <!-- info for user -->
+    <div class="up-info mb-10">
+      <div class="px-20 flex flex-col items-center">
+        <img class="h-28 w-28 object-cover rounded-full" src="./images/pic-3.jpg" alt="user image">
+        <h3 id="username" class="text-blue-950 font-bold text-base mt-1">kiroloes Reda</h3>
+        <p class="text-gray-500 font-semibold text-sm">student</p>
+      </div>
+      <div class="bg-purple-500 w-full flex items-center justify-center text-white rounded-sm px-3 py-2 mt-3">
+        <a  href="./prfile.html"  class="text-xl font-semibold">View Profile</a>
+      </div>
+    </div>
+
+    <!-- navigation bar  -->
+    <div class="navigationBar">
+      <ul class="space-y-10">
+        <li class=" hover:bg-gray-200  hover:text-white transition-colors flex flex-row items-center text-xl py-3 px-2">
+          <i class="fa-solid fa-house-user mr-2 text-purple-500"></i>
+          <a class="text-gray-500 px-2 rounded-sm" href="./index.html">home</a>
+        </li>
+        <li class="  hover:bg-gray-200  hover:text-white transition-colors flex flex-row items-center text-xl py-3 px-2">
+          <i class="fa-solid fa-address-card mr-2 text-purple-500"></i>
+          <a class="text-gray-500 px-2 rounded-sm" href="./about.html">about</a>
+        </li>
+        <li class=" hover:bg-gray-200  hover:text-white transition-colors flex flex-row items-center text-xl py-3 px-2">
+          <i class="fa-solid fa-graduation-cap mr-2 text-purple-500"></i>
+          <a class="text-gray-500 px-2 rounded-sm " href="./allcourses.html">courses</a>
+        </li>
+        <li class=" hover:bg-gray-200  hover:text-white transition-colors flex flex-row items-center text-xl py-3 px-2">
+          <i class="fa-solid fa-chalkboard-user mr-2 text-purple-500"></i>
+          <a class="text-gray-500 px-2 rounded-sm " href="./teachers.html">teachers</a>
+        </li>
+        <li class=" hover:bg-gray-200  hover:text-white transition-colors flex flex-row items-center text-xl py-3 px-2">
+          <i class="fa-solid fa-headset mr-2 text-purple-500"></i>
+          <a class="text-gray-500 px-2 rounded-sm" href="./contactUs.html">contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- right sub container -->
+  <div class="base-container flex-1 ">
+  
+    <!-- up nav -->
+    <div style="position: sticky; left: 0; top: 0; z-index: 5;"  class="main-nav-bar flex  justify-around items-center px-5 py-4 pr-7 bg-white">
+        <a href="./index.html"  class="font-semibold text-xl">Educa</a>
+
+        <div class="form">
+            <input class="bg-gray-200 hidden md:inline py-2 px-3 rounded-md w-36 md:w-80  xl:w-96" type="search" placeholder="search courses...." name="searchCourses">
+            <i class="relative right-8 hidden md:inline fa-solid fa-magnifying-glass"></i>
+            
+        </div>
+
+         <div class="icon-controls flex space-x-3">
+            <i class="bg-gray-200 p-3 text-md rounded-md text-center fa-solid fa-bars"></i>
+            <a href="./prfile.html"><i class="bg-gray-200 p-3 text-md rounded-md text-center fa-solid fa-user"></i></a>
+            <i class="bg-gray-200 p-3 text-md rounded-md text-center md:hidden fa-solid fa-magnifying-glass"></i>
+           <a href="./contactUs.html"> <i class="bg-gray-200 p-3 text-md rounded-md text-center fa-solid fa-gear"></i></a>
+        </div>
+    </div>
+
+    <div style="height: 80vh;" class="main-container bg-gray-200  p-3 px-32 flex justify-center items-center">
+
+        <!-- Teacher Registration Form -->
+<div  class="bg-white shadow-lg rounded-xl p-8 py-16 w-full max-w-3xl mx-auto">
+    <!-- Form -->
+     <h2 class="text-center text-2xl font-semibold text-blue-950 mb-12">Add Courses</h2>
+    <form id="courseForm" class="space-y-4">
+      <!-- Course Name -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Course Name</label>
+        <input 
+          type="text" 
+          id="courseName" 
+          class="w-full mt-1 p-2 border rounded-lg focus:ring-2  bg-gray-100 focus:ring-blue-400 focus:outline-none"
+          placeholder="Enter course name"
+          required
+        >
+      </div>
+
+      <!-- Course Date -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Course Date</label>
+        <input 
+          type="date" 
+          id="courseDate" 
+          class="w-full mt-1 p-2 border rounded-lg focus:ring-2  bg-gray-100 focus:ring-blue-400 focus:outline-none"
+          required
+        >
+      </div>
+
+      <!-- Submit Button -->
+      <button 
+        type="submit" 
+        class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition"
+      >
+        Add Course
+      </button>
+    </form>
+</div>
+
+
+    </div>
+
+    <div style="position: sticky ; bottom:0; " class="footer  border w-full flex justify-center bg-white md:text-xl p-7 ">
+       <p>copyright @2025 by <span class="text-purple-500">Eng: kiroloes Reda </span> | all rights reserved!</p>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="./main.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,20 @@
+body{
+    background-color: white;
+    color: black;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.side-nav-bar{
+ animation: appear 1s ease-in-out;
+}
+@keyframes appear {
+    0%{
+        transform: translateY(-1000px);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
